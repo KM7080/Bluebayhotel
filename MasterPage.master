@@ -1,0 +1,40 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeFile="MasterPage.master.cs" Inherits="MasterPage" %>
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head runat="server">
+     <title></title>
+    <asp:ContentPlaceHolder id="head" runat="server">
+    </asp:ContentPlaceHolder>
+    <link href="StyleSheet.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+        <header>
+    <%--// Navaigation bar--%>
+        <nav class="navbar">
+      <div class="logo">&nbsp; WELCOME TO&nbsp; BLUEBAY</div>
+      <ul class="nav-links">
+        <li><a href="Default.aspx">Default.aspx</a></li>
+        <li><a href="vehicle.aspx">Vehicles</a></li>
+        <li><a href="About.aspx">About</a></li>
+        <li><a href="contact.aspx">Contact</a></li>
+      </ul>
+      <a href="login.aspx" class="btn">Login</a>
+    </nav>
+
+  </header>
+  <div id="bg">
+  <form id="f1" runat="server">
+  <div>
+   <asp:ContentPlaceHolder id="ContentPlaceHolder1" runat="server" >
+        
+        </asp:ContentPlaceHolder>
+        </div>
+        </form>
+        </div>
+  <footer>
+    <p>&copy; 2024 Hotel. All Rights Reserved.</p>
+  </footer>
+</body>
+</html>
